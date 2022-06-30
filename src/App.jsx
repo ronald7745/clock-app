@@ -1,12 +1,19 @@
-import {useState} from 'react'
-import './style.scss'
+import { useState } from 'react';
+import Hour from './components/Hour'
+import Data from './components/Data'
+import './sass/style.scss'
 
 export default function App() {
-  const [count, setCount] = useState(0)
+  const [date, setDate] = useState(new Date());
+
+  setInterval(() => {
+    setDate(new Date());
+  }, 1000);
 
   return (
-    <div className="App">
-      <button onClick={()=> {setCount(count + 1)}} className='count btn btn-primary'>Count : {count}</button>
+    <div className='App'>
+      <Hour Date={date} />
+      <Data Date={date} />
     </div>
   )
 }

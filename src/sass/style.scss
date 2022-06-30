@@ -1,0 +1,24 @@
+body{
+  background-color: rgb(247, 175, 247);
+}
+
+.App {
+  text-align: center;
+  margin-top: 250px;
+}
+
+.hour {
+  font-size: 2em;
+  background-color: #d9f38c;
+  width: 70vw;
+  border-radius: 15px;
+  margin: 10px auto;
+}
+
+.data {
+  width: 70vw;
+  border-radius: 15px;
+  font-size: 1.5em;
+  background-color: #d9f38c;
+  margin: 10px auto;
+}
